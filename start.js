@@ -3,6 +3,7 @@ let mozjpeg = await (await import('./mozjpeg_enc.js')).default({noInitialRun: tr
 // let mozjpeg = await (await import('https://esm.sh/gh/GoogleChromeLabs/squoosh/codecs/mozjpeg/enc/mozjpeg_enc.js')).default({noInitialRun: true});
 
 let {decode, encode} = await import('https://esm.sh/gh/fakoua/jpeg.ts/mod.ts');
+let {decode: decodeAVIF, encode: encodeAVIF} = await import('https://esm.sh/gh/jamsinclair/jSquash/packages/avif'); // npm:@jsquash/avif
 
 let options = {
 	quality: 75,
